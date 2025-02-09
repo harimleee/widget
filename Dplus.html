@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        const today = new Date();
+        const targetDate = new Date('2024-10-30');
+
+        // 밀리초 단위 차이 계산
+        const diffTime = today - targetDate;
+
+        // 밀리초를 일수로 변환
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        document.writeln(`크리스마스까지 ${diffDays}일 남았습니다.`);
+    </script>
+</body>
+</html>
